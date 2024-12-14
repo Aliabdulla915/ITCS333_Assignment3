@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>University of Bahrain Students Enrollment</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Bahrain Students Enrollment</title>
+    <!-- Pico.css for responsive styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- JavaScript file -->
+    <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1 >University of Bahrain Students Enrollment by Nationality</h1>
-  </header>
-
-  <main>
-    <div class="container">
-      <table id="userTable">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>Semester</th>
-            <th>The Program</th>
-            <th>Nationality</th> 
-            <th>College</th>
-            <th>Number of Students</th>
-          </tr>
-        </thead>
-        <tbody id="tbody">
-          <!-- Table rows will be dynamically generated here -->
-        </tbody>
-      </table>
-    </div>
-  </main>
-  <script src="script.js"></script> 
+    <header>
+        <!-- Page title, dynamically updated based on selected language -->
+        <h1>
+            
+        </h1>
+        <!-- Link to toggle between languages -->
+        <h6>
+            
+        </h6>
+    </header>
+    <main>
+        <div class="overflow-auto">
+            <!-- Table for displaying API data -->
+            <table data-theme="light">
+                <thead>
+                    <!-- Table headers, dynamically updated based on language -->
+                    <tr>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows generated dynamically based on API data -->
+                </tbody>
+            </table>
+        </div>
+    </main>
 </body>
 </html>
